@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "express": "^4.16.2",
+    "gulp": "^3.9.1",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -11,7 +12,9 @@
     "react-scripts": "1.1.1",
     "socket.io": "^2.0.4",
     "socket.io-client": "^2.0.4",
-    "uuid": "^3.2.1"
+    "turbo-cli": "^0.15.27",
+    "uuid": "^3.2.1",
+    "webpack": "^3.11.0"
   },
   "scripts": {
     "start": "node src/server/index.js",
