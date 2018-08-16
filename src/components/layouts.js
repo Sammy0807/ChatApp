@@ -4,7 +4,7 @@ import {USER_CONNECTED, LOGOUT, VERIFY_USER} from '../events'
 import LoginForm from './loginform'
 import ChatContainer from './chats/chatcontainer'
 
-const socketUrl ="http://localhost:3231"
+const socketUrl ="https://nostalgic-mestorf-28e32b.netlify.com:3231"
 export default class Layout extends Component{
 
   constructor(props){
