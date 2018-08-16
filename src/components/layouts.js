@@ -4,7 +4,7 @@ import {USER_CONNECTED, LOGOUT, VERIFY_USER} from '../events'
 import LoginForm from './loginform'
 import ChatContainer from './chats/chatcontainer'
 
-const socketUrl ="/"
+const socketUrl ="http://localhost:3231"
 export default class Layout extends Component{
 
   constructor(props){
@@ -57,9 +57,12 @@ reconnect = (socket)=>{
     return(<div className="container">
           {
             !user?
-        <LoginForm socket ={socket} setUser ={this.setUser} />
+        <LoginForm
+        socket={socket}
+        setUser={this.setUser} />
         :
-        <ChatContainer socket={socket} user={user} logout={this.logout}/>
+        <ChatContainer
+        socket={socket} user={user} logout={this.logout}/>
           }
       </div>);
   }
